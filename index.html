@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buscador de Ações</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container d-grid gap-2">
+        <h1>Buscar Ação</h1>
+          <input type="text" id="tickerInput" placeholder="Digite o ticker da ação" class="form-control">
+        <button class="btn btn-primary" id="searchButton">Buscar</button>
+        <button class="btn btn-secondary mt-2" id="logButton" onclick="exibirLogs()" style="display: none;">Exibir Logs</button> <!-- Escondido inicialmente -->
+    </div>
+    <div class="container-fluid">
+        <div class="resultado" id="result"></div>
+        <div id="mostrarLogs"></div>
+    </div>
+
+    <div class="modal fade" id="modalLogs" tabindex="-1" aria-labelledby="modalLogsLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLogsLabel">Logs Registrados</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modalLogsContainer"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="script.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

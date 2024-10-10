@@ -1,0 +1,19 @@
+body {
+    font-family: Inter, sans-serif;
+    margin: 50px;
+}
+#result {
+    margin-top: 20px;
+}
+.stock-info {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+img {
+    width: 50px;
+}
+.log-item {
+    margin-bottom: 10px;
+}
