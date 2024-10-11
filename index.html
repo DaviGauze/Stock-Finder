@@ -10,12 +10,12 @@
   <body>
     <div class="container d-grid gap-2">
         <h1>Buscar Ação</h1>
-          <input type="text" id="tickerInput" placeholder="Digite o ticker da ação" class="form-control">
+        <input type="text" id="tickerInput" placeholder="Digite o ticker da ação" class="form-control">
         <button class="btn btn-primary" id="searchButton">Buscar</button>
         <button class="btn btn-secondary mt-2" id="logButton" onclick="exibirLogs()" style="display: none;">Exibir Logs</button> <!-- Escondido inicialmente -->
     </div>
     <div class="container-fluid">
-        <div class="resultado" id="result"></div>
+        <div class="resultado container" id="result"></div>
         <div id="mostrarLogs"></div>
     </div>
 
@@ -33,7 +33,8 @@
         </div>
       </div>
     </div>
-    <link rel="stylesheet" href="script.js">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
